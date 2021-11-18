@@ -7,8 +7,7 @@ function Games(props) {
     return props.games.map((game) => (
       <div key={game._id} className="container p-11">
         <Link to={`/games/${game._id}`}>
-          <h1>{game.name}</h1></Link>
-        <img src={game.image} alt={game.name} />
+        <img src={game.image} alt={game.name} /></Link>
         <h3>{game.title}</h3>
       </div>
     ));

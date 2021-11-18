@@ -38,12 +38,13 @@ function Main(props) {
             <Show
               games={games}
               deleteGames={deleteGames}
+              URL={URL}
               {...rp}
             />
           )}
         />
         <Route
-          path="/games/cart"
+          path="/cart"
           render={(rp) => (
             <ShoppingCart
               games={games}

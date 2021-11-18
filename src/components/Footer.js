@@ -1,7 +1,6 @@
 function Footer(props){
   return (
     <div>
-      Something
     </div>
   )
 } 

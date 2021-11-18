@@ -3,7 +3,7 @@
 
 function Nav() {
   return (
-    <div className="fixed w-full h-8 bg-blue-400 text-gray-200 flex flex-row justify-between items-center">
+    <div className="fixed w-full h-8 bg-purple-600 text-gray-200 flex flex-row justify-between items-center">
       <div className="store-logo text-xl font-bold px-2">nosferatu</div>
       <ul className="menu-list flex flex-row text-xs font-bold">
         <li className="menu-list-item px-2">

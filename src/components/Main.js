@@ -5,13 +5,16 @@ import Show from "../pages/Show";
 import ShoppingCart from "../pages/ShoppingCart";
 // Step
 function Main(props) {
-  const [games, setGames] = useState(null);
-  const [shoppingCart, setShoppingCart] = useState(null);
-  const onAdd = (game) => {
+  const [games, setGames] = useState(null); 
+  const [shoppingCart, setShoppingCart] = useState(0); //set to 1?
+  const addToCart = (game) => {
+// I want to send a quantity of 1 to shoppingcart
+// Make a variable that holds currentCartAmount
 // 
+//    
+  setShoppingCart(shoppingCart + 1)
   } 
   
-
   const URL = "http://localhost:4000/games/"
 
   const getGames = async () => {
@@ -42,7 +45,7 @@ function Main(props) {
           render={(rp) => (
             <Show
               games={games}
-              onAdd={onAdd}
+              addToCart={addToCart}
               deleteGames={deleteGames}
               URL={URL}
               {...rp}
@@ -53,6 +56,7 @@ function Main(props) {
           path="/cart"
           render={(rp) => (
             <ShoppingCart
+              shoppingCart={shoppingCart}
               games={games}
               deleteGames={deleteGames}
               {...rp}

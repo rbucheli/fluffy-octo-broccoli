@@ -5,7 +5,6 @@ function Show(props) {
   const id = props.match.params.id
   const games = props.games
   const game = games.find(p => p._id === id)
-  
 
   return (
     <div className="gamesShow">
@@ -17,7 +16,7 @@ function Show(props) {
       <p>Price: {game.price}</p>
       <p>Qty: {game.quantity}</p>
       <Link to='/cart'>
-    <button className="btn" onClick={() => props.onAdd(game)} >Add to Cart</button>
+    <button className="btn" onClick={() => props.addToCart()}>Add to Cart</button>
     </Link>
     </div>
   )

@@ -1,7 +1,6 @@
 function ShoppingCart(props){
   return (
     <div>
-      Bane
     </div>
   )
 } 

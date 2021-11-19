@@ -3,9 +3,14 @@ import { Route, Switch } from "react-router-dom";
 import Games from "../pages/Games";
 import Show from "../pages/Show";
 import ShoppingCart from "../pages/ShoppingCart";
-
+// Step
 function Main(props) {
   const [games, setGames] = useState(null);
+  const [shoppingCart, setShoppingCart] = useState(null);
+  const onAdd = (game) => {
+// 
+  } 
+  
 
   const URL = "http://localhost:4000/games/"
 
@@ -37,6 +42,7 @@ function Main(props) {
           render={(rp) => (
             <Show
               games={games}
+              onAdd={onAdd}
               deleteGames={deleteGames}
               URL={URL}
               {...rp}

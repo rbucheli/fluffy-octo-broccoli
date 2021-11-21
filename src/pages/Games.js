@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Games(props) {
   const loaded = () => {
     return (
-      <div className="flex flex-wrap -mx-1 lg:-mx-4">
+      <div className="flex flex-wrap -mx-1 lg:-mx-4">   
         {props.games.map((game) => (
           <div
             key={game._id}

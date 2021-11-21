@@ -5,7 +5,8 @@ import Show from "../pages/Show";
 import ShoppingCart from "../pages/ShoppingCart";
 // Step
 function Main(props) {
-  const [games, setGames] = useState(null); 
+  const [games, setGames] = useState(null);
+  const [openModal, setOpenModal] = useState(false);
   const [shoppingCart, setShoppingCart] = useState(0); //set to 1?
   const addToCart = (game) => {
 // I want to send a quantity of 1 to shoppingcart

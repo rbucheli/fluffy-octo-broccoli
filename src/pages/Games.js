@@ -10,7 +10,7 @@ function Games(props) {
             key={game._id}
             className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3"
           >
-            <article className="overflow-hidden rounded-lg shadow-lg">
+            <article className="overflow-hidden bg-white bg-cover rounded-lg shadow-lg">
               <Link to={`/games/${game._id}`}>
                 <img
                   src={game.image}
@@ -19,7 +19,7 @@ function Games(props) {
                 />
               </Link>
               <header className="flex items-center justify-between leading-tight p-2 md:p-4">
-                <h1 class="text-lg">
+                <h1 class="text-lg font-bold">
                   {game.title}
                   <a
                     class="no-underline hover:underline text-black"

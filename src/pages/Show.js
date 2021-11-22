@@ -27,7 +27,7 @@ function Show(props) {
           <Link to="/cart">
             <button
               className="bg-blue-500 text-white font-medium px-4 py-2 rounded hover:bg-blue-600"
-              onClick={() => props.addToCart()}
+              onClick={() => props.addToCart(game)}
             >
               Add to Cart
             </button>

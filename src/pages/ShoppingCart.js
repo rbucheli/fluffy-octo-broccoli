@@ -1,6 +1,6 @@
 function ShoppingCart(props){
   return (
-    <div>
+    <div className="center">
       <br />
       <br />
       <br />

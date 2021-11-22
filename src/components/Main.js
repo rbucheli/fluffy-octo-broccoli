@@ -7,13 +7,10 @@ import ShoppingCart from "../pages/ShoppingCart";
 function Main(props) {
   const [games, setGames] = useState(null);
   const [openModal, setOpenModal] = useState(false);
-  const [shoppingCart, setShoppingCart] = useState(0); //set to 1?
+  const [shoppingCart, setShoppingCart] = useState([]); //set to 1?
   const addToCart = (game) => {
-// I want to send a quantity of 1 to shoppingcart
-// Make a variable that holds currentCartAmount
-// 
-//    
-  setShoppingCart(shoppingCart + 1)
+    console.log(game)
+    setShoppingCart(shoppingCart => [...shoppingCart, game._id])
   } 
   
   const URL = "http://localhost:4000/games/"
@@ -21,6 +18,7 @@ function Main(props) {
   const getGames = async () => {
     const response = await fetch(URL);
     const data = await response.json();
+    console.log(data)
     setGames(data);
   };
 
@@ -36,7 +34,7 @@ function Main(props) {
   useEffect(() => getGames(), []);
 
   return (
-    <main>
+    <main className="" >
       <Switch>
         <Route exact path="/games">
           <Games games={games}/>

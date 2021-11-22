@@ -6,3 +6,21 @@
 body {
   font-family: PressStart2P-Regular;
 }
+
+.modalBttn {
+position: absolute;
+left: 96%;
+top: 1%
+}
+
+.modalTitle {
+  position: absolute;
+  left: 2%;
+  top: 20%;
+}
+
+.modalQty {
+  position: absolute;
+  left: 3%;
+  top: 35%;
+}

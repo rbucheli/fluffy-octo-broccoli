@@ -13,7 +13,7 @@ function Main(props) {
     setShoppingCart(shoppingCart => [...shoppingCart, game._id])
   } 
   
-  const URL = "http://localhost:4000/games/"
+  const URL = "https://nosferatuu.herokuapp.com/"
 
   const getGames = async () => {
     const response = await fetch(URL);

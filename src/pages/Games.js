@@ -75,3 +75,4 @@ export default Games;
 // I need each product to be a link that takes me to its individual show page
 // overflow-hidden rounded-lg shadow-lg
 // for article tag
+//  m-96 

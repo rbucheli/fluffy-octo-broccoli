@@ -11,9 +11,9 @@ function Modal({ closeModal, shoppingCart }) {
         <button className="modalBttn text-xl" onClick={() => closeModal(false)}>
           X
         </button>
-        <h1 className="modalTitle">Title: </h1>
+        <h1 className="modalTitle">Title: Rocketeer</h1>
         <p className="modalQty">Qty: 1</p>
-        <p className="modalPrice"></p>
+        <p className="modalPrice">Price: $249</p>
         <button className="checkOutBttn">Checkout</button>
       </div>
     </div>

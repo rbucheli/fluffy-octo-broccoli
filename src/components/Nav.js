@@ -7,7 +7,7 @@ function Nav(props) {
   const [openModal, setOpenModal] = useState(false);
   return (
 <div className="w-full h-20 bg-gray-800 text-gray-200 flex flex-row justify-between items-center">
-      <div className="store-logo text-3xl font-bold px-3">nosferatu</div>
+      <div className="store-logo text-3xl font-bold px-3">cache!</div>
       <ul className="menu-list flex flex-row text-xl font-bold">
         <li className="menu-list-item px-4">
           <a href="/">home</a>
@@ -24,7 +24,7 @@ function Nav(props) {
           >
            cart 
           </button>
-          {openModal && <Modal  shoppingCart={props.shoppingCart}
+          {openModal && <Modal shoppingCart={props.shoppingCart}
  closeModal={setOpenModal} />}
         </li>
       </ul>

@@ -32,3 +32,8 @@ top: 1%
   top: 90%;
   
 }
+
+.modalPrice {
+  position: absolute;
+  left: 3%;
+}

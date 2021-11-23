@@ -43,7 +43,7 @@ function Main(props) {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/games">
+          <Route exact path="/games">
             <Games games={games} />
           </Route>
           <Route

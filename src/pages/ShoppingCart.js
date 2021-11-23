@@ -2,8 +2,6 @@ function ShoppingCart(props) {
   const { shoppingCart } = props;
   return (
     <div>
-      <br />
-      <br />
       {props.shoppingCart}
     </div>
   )

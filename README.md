@@ -1,7 +1,7 @@
 Cache!
 ===============
 
-An e-commerce application that allows users to purchase rare and vintage video
+An e-commerce application that allows users to purchase rare and vintage video games
 
 Technologies Used
 ===============
@@ -26,5 +26,6 @@ Heroku Deployment Pending (issue with "/games" route)
 
 Future Enhancements
 ===============
-- Implement basic authentication
 - Complete cart functionality
+- Implement authentication
+- Add a news bulletin in home page

@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
 import { Route, Switch } from "react-router-dom";
+import Nav from './Nav'
 import Games from "../pages/Games";
 import Show from "../pages/Show";
+import Home from "../pages/Home";
 import ShoppingCart from "../pages/ShoppingCart";
 // Step
 function Main(props) {
   const [games, setGames] = useState(null);
   const [openModal, setOpenModal] = useState(false);
-  const [shoppingCart, setShoppingCart] = useState([]); //set to 1?
+  const [shoppingCart, setShoppingCart] = useState([]); //define shoppingCart as a hook, setShoppingCart to change the value of shoppingCart, set value to empty array
   const addToCart = (game) => {
     console.log(game)
-    setShoppingCart(shoppingCart => [...shoppingCart, game._id])
+    setShoppingCart(shoppingCart => [...shoppingCart, game._id]) //pass the new value to 
   } 
   
   const URL = "https://nosferatuu.herokuapp.com/"
@@ -34,8 +36,13 @@ function Main(props) {
   useEffect(() => getGames(), []);
 
   return (
-    <main className="" >
+  <>
+    <Nav shoppingCart={shoppingCart}/>
+    <main>
       <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
         <Route exact path="/games">
           <Games games={games}/>
         </Route>
@@ -63,7 +70,8 @@ function Main(props) {
           )}
         />
       </Switch>
-    </main>
+      </main>
+    </>
   );
 }
 

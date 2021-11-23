@@ -15,7 +15,7 @@ module.exports = {
         'xl': '48px'
       },
       backgroundImage: {
-        'something-great': "url(https://images.unsplash.com/photo-1543622748-5ee7237e8565?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)"
+        'something-great': "url(https://i.pinimg.com/originals/c6/dd/7b/c6dd7b83d53b530167225bc2ad994fa7.jpg)"
       }
     },
   },

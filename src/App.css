@@ -5,6 +5,7 @@
 
 body {
   font-family: PressStart2P-Regular;
+  background-image: url(https://i.pinimg.com/originals/c6/dd/7b/c6dd7b83d53b530167225bc2ad994fa7.jpg);
 }
 
 .modalBttn {
@@ -23,4 +24,11 @@ top: 1%
   position: absolute;
   left: 3%;
   top: 35%;
+}
+
+.checkOutBttn {
+  position: absolute;
+  left: 40%;
+  top: 90%;
+  
 }

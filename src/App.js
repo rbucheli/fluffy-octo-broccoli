@@ -1,12 +1,10 @@
 import './App.css';
-import Nav from './components/Nav'
 import Main from './components/Main';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
-      <Nav />
+    <div className="bg-something-great bg-no-repeat">
       <Main />
       <Footer />
     </div>

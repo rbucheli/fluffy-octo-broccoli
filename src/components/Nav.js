@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Modal from "./Modal";
 
-function Nav() {
+function Nav(props) {
   const [openModal, setOpenModal] = useState(false);
   return (
 <div className="w-full h-20 bg-gray-800 text-gray-200 flex flex-row justify-between items-center">
@@ -24,7 +24,8 @@ function Nav() {
           >
            cart 
           </button>
-          {openModal && <Modal closeModal={setOpenModal} />}
+          {openModal && <Modal  shoppingCart={props.shoppingCart}
+ closeModal={setOpenModal} />}
         </li>
       </ul>
     </div>

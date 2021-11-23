@@ -1,9 +1,8 @@
-function ShoppingCart(props){
+function ShoppingCart(props) {
+  const { shoppingCart } = props;
   return (
-    <div className="center">
-      <br />
-      <br />
-      <br />
+    <div>
+      <h1>{shoppingCart.length === 0 && <div>Cart is Empty</div>} </h1> 
       <br />
       <br />
       {props.shoppingCart}
